@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/sky/catkin_ws_uD_I/devel/include/**",
+        "/home/sky/catkin_ws_uD/devel/include/**",
+        "/home/sky/tutorial_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/sky/catkin_ws_uD_I/src/ds_emergency_pkg/include/**",
+        "/home/sky/catkin_ws_uD_I/src/ds_master_cs/include/**",
+        "/home/sky/catkin_ws_uD_I/src/ds_robot_arm_pkg/include/**",
+        "/home/sky/catkin_ws_uD_I/src/ds_visual_system_pkg/include/**",
+        "/home/sky/tutorial_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/sky/tutorial_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/sky/catkin_ws_uD_I/src/ud_bringup/include/**",
+        "/home/sky/catkin_ws_uD_I/src/ud_msgs/include/**",
+        "/home/sky/catkin_ws_uD/src/udice_base/include/**",
+        "/home/sky/tutorial_ws/src/universal_robot/ur_kinematics/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

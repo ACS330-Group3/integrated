@@ -1,0 +1,3 @@
+int8 ID #Sends the product ID
+---
+sensor_msgs/Image im #Sends the images

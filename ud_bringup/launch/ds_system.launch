@@ -1,0 +1,31 @@
+<launch>
+
+	<param name="/ds_Reset" type="bool" value="False" />
+	<param name="/ds_robot_arm_EmergencyS" type="bool" value="False" />
+
+	<param name="/ds_ud_Location" type="string" value="notReceived" /> 
+	<!-- comment: notReceived/CubeLifter/CubeRotator -->
+
+	<param name="/ds_robot_arm_drawing" type="bool" value="False" />
+	<param name="/ds_vrep_connected" type="bool" value="False" />
+	<param name="/ds_C_ID" type="string" value="107" />
+	<param name="/ds_PicG" type="string" value="450" />
+
+	<node name="ds_emergency_reaction_server" pkg="ds_emergency_pkg" type="emergency_action.py" />
+	<!-- comment: python code edit not finished! -->
+	<node name="ds_robot_arm_control" pkg="ds_robot_arm_pkg" type="ros_abb140control.py" />
+	<node name="ds_robot_arm_control_server" pkg="ds_robot_arm_pkg" type="ros_abb140control_ser.py" />
+
+	<node name="ds_pic_retrieve_service" pkg="ds_master_cs" type="ds_pic_retrive.py" />
+	<node name="ds_ros_master" pkg="ds_master_cs" type="ds_ros_master.py" />
+	<!-- comment: python code edit not finished! -->
+	<node name="ds_cube_lifter_server" pkg="ds_master_cs" type="ds_cube_lifter.py" />
+	<!-- comment: python code edit not finished! -->
+	<node name="ds_cube_rotate_server" pkg="ds_master_cs" type="ds_cube_rotator.py" />
+	<!-- comment: python code edit not finished! -->
+
+	<node name="cs_Img_Publish_Server" pkg="ds_visual_system_pkg" type="cs_imagepubserv.py" />
+	<node name="ds_cube_locator_server" pkg="ds_visual_system_pkg" type="ds_cube_locator_ser.py" />
+	<!-- comment: python code edit not finished! -->
+
+</launch>

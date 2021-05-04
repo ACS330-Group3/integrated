@@ -1,0 +1,4 @@
+int8 ID #Product ID
+int8 result #Percentage match
+---
+string confirmation #return confirmation
